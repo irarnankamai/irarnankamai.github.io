@@ -1,0 +1,247 @@
+/* Estilos generales */
+body {
+       
+    background: linear-gradient(to bottom, #20232a, #3b5b71, #284052, #8da9bb, #5d83a0, #463c3d, #5d5c5b, #8e868b);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; 
+    opacity: 0.9;
+}
+
+/* Titulo del inicio */
+
+@keyframes entradaTexto {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    animation: entradaTexto 1s ease forwards;
+}
+
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align:justify;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para la calculadora */
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+    width: 250px;
+    background-color: rgb(11, 10, 10);
+    border: 4px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 25px; 
+    text-align: left;
+    
+}
+
+
+.display {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 2px; 
+    background-color: #444a48;
+    pointer-events: none; 
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+    
+}
+
+button {
+   
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+  
+}
+
+button:hover {
+    color: #58e71f;
+}
+
+
+
+
+
+
+/*ver ejemplo */
+/* Estilos para el ejemplo */
+.operacion {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.sobre-mi {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.inicio {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* Estilos para los botenes de ver ejemplo */
+#sum {
+    background-color:  #556c61; 
+    color: white; 
+    padding: 10px 50px; 
+    font-size: 12px; 
+    border: navajowhite; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align:center;
+}
+
+#sum:hover {
+    background-color: #16e016; 
+}
+
+#res {
+    background-color:  #556c61; 
+    color: white; 
+    padding: 10px 50px; 
+    font-size: 12px; 
+    border: navajowhite; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align:center;
+}
+
+#res:hover {
+    background-color: #16e016; 
+}
+
+#mul {
+    background-color:  #556c61; 
+    color: white; 
+    padding: 10px 50px; 
+    font-size: 12px; 
+    border: navajowhite; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align:center;
+}
+
+#mul:hover {
+    background-color: #16e016; 
+}
+
+#div {
+    background-color:  #556c61; 
+    color: white; 
+    padding: 10px 50px; 
+    font-size: 12px; 
+    border: navajowhite; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align:center;
+}
+
+#div:hover {
+    background-color: #16e016; 
+}
+
+
+
+
+/* Estilos para la imagen */
+
+.gif {
+    width: 400px; 
+    height: 350px; 
+    border: 2px solid rgb(202, 145, 145); 
+    animation: moveAnimation 2s infinite alternate; 
+}
+.op {
+    width: 330px; 
+    height: 320px; 
+    border: 2px solid black; 
+    animation: moveAnimation 2s infinite alternate; 
+}
+
+/* Animación de movimiento */
+@keyframes moveAnimation {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(100px); 
+    }
+}
+
+/* Estilos para el menú */
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(220, 210, 210);
+}
+
+#menu li:hover {
+    background-color: #58e71f; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
